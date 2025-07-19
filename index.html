@@ -3,9 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My page</title>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 </head>
-<body>
-    <div>Hello world!</div>
+<body class="root">
+    <header class="nav-header">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contatos">Contatos</a>
+    </header>
+
+    <section id="home" class="section primary-background">
+        <main class="container-home">
+            <div class="descricao">
+                <h1>Renan Cabral</h1>
+                <h2>Desenvolvedor Full Stack especializado em JavaScript/TypeScript, com foco em soluções robustas usando Node.js, React e SQL Server.</h2>
+
+
+                
+                <div class="container-btn">
+                    <a href="https://github.com/Re-isNaN" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div>Ver GitHub</div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/renan-cabral-8a24092a4/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>Ver LinkedIn</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="foto-polygon">
+                <img src="./assets/foto_perfil.jfif" alt="Imagem dentro do hexágono" />
+            </div>
+        </main>
+    </section>
+
+    <section id="sobre" class="secondary-background">
+        <main class="container-sobre">
+            <h1>Sobre</h1>
+            <p>
+                Sou desenvolvedor Full Stack especializado em JavaScript e TypeScript, com foco em aplicações web 
+                para gestão comercial e industrial. Trabalho com Node.js no backend, React no frontend e SQL Server 
+                como principal banco de dados. Tenho formação em desenvolvimento de APIs (JS Expert) e experiência 
+                com Python em projetos de IA. Atualmente, busco evoluir em áreas como Inteligência Artificial, Machine Learning, 
+                criação de dashboards interativos em React e otimização de performance no backend com Node.
+            </p>
+
+            <div class="container-cards">
+                <div class="card backend">
+                    <h1>Backend</h1>
+                    <p>
+                        Atuo na integração entre o client-side e o banco de dados por meio de APIs bem estruturadas. Dou 
+                        ênfase à performance das aplicações, explorando recursos como programação assíncrona, execução 
+                        paralela e processamento sob demanda no Node.js. Adoto TDD para garantir confiabilidade, seguindo 
+                        princípios de Clean Code e mantendo uma arquitetura organizada e coerente.
+                    </p>
+                </div>
+
+                <div class="card frontend">
+                    <h1>Frontend</h1>
+                    <p>
+                        Desenvolvo interfaces modernas e profissionais, com atenção à responsividade, performance e interatividade. 
+                        Utilizo componentes reutilizáveis e estilizações consistentes, sempre alinhadas às boas práticas de UI/UX. 
+                        A estrutura do projeto é bem definida, com organização clara de pastas, o que facilita a manutenção e garante 
+                        escalabilidade, mantendo a estética e a usabilidade como prioridades.
+                    </p>
+                </div>
+
+                <div class="card ia">
+                    <h1>IA</h1>
+                    <p>
+                        Em Inteligência Artificial, atuo principalmente com Machine Learning e integração com os principais modelos do mercado, 
+                        utilizando JavaScript e Python. Tenho experiência no desenvolvimento de chatbots baseados em embeddings e processamento 
+                        de linguagem natural (NLP), modelos de previsão estatística e análise de imagem em tempo real com TensorFlow. Busco aplicar 
+                        essas tecnologias para enriquecer dados em APIs, aprimorar previsões e oferecer uma experiência mais inteligente e personalizada 
+                        ao usuário.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- <section id="projetos" class="primary-background">
+        <main class="container-home">
+            <div></div>
+            <div></div>
+        </main>
+    </section> -->
+
+    <section id="contatos" class="footer-contatos">
+        <div class="titulo">
+            <h1>Renan Cabral</h1>
+            <h2>renangusoncabral@gmail.com</h2>
+        </div>
+
+        <nav class="contatos">
+            <ul class="items-contatos">
+                <li>
+                    <a href="https://www.instagram.com/re.isnan/" target="_blank" class="btn-social instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/Re-isNaN" target="_blank" class="btn-social github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/renan-cabral-8a24092a4/" target="_blank" class="btn-social linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
 </body>
 </html>
