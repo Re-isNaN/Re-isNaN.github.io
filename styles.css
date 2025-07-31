@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.root::selection {
+    color: #52D1DC;
+    /* cor do texto selecionado */
+}
 .nav-header {
     width: 142vh;
     height: 90px;
@@ -75,7 +79,6 @@
     justify-content: space-between;
 
     .descricao {
-
         display: flex;
         flex-direction: column;
 
@@ -185,7 +188,7 @@
 }
 
 .container-sobre {
-    height: calc(100vh - 90px);
+    height: 100vh;
     width: 177vh;
     padding: 32px;
 
@@ -200,7 +203,7 @@
         margin: 0;
         padding: 0;
         font-size: 48px;
-        color: #52D1DC;
+        color: #FFF;
     };
 
     p {
@@ -241,6 +244,137 @@
     }
 }
 
+.container-projetos {
+    width: calc(100vw - 16px);
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 48px;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 48px;
+        color: #FFF;
+    };
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 32px;
+        color: #FFF;
+        margin-left: 12px
+    };
+
+    .section-projetos {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    };
+
+    .carrossel-projetos {
+        transition: transform 0.3s ease;
+        padding: 24px;
+        gap: calc(48px);
+        background-color: #151C27;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 320px;
+
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+
+        scroll-behavior: auto;
+
+        .btn-voltar,
+        .btn-prosseguir {
+            width: 4rem;
+            height: 4rem;
+            z-index: 5;
+            position: absolute;
+            bottom: calc(50% - 4rem);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        };
+
+        .btn-voltar {
+            left: 1rem;
+        };
+
+        .btn-prosseguir {
+            right: 1rem;
+        };
+
+        .btn-voltar:hover,
+        .btn-prosseguir:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        };
+
+        .projeto {
+            flex: 0 0 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+
+            .img-projeto {
+                background-color: #e1306c;
+                min-height: 270px;
+                max-height: 270px;
+
+                min-width: 480px;
+                max-width: 480px;
+            };
+
+            .img-projeto:hover {
+                cursor: pointer;
+                transform: scale(0.9);
+            };
+
+            .text-projeto {
+                width: calc(80% - 480px);
+                color: #fff;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+
+                h3 {
+                    font-size: 32px;
+                    color: #FFF;
+                };
+
+                p {
+                    font-size: 24px;
+                    color: #FFF
+                };
+            }
+        }
+    };
+
+    .carrossel-projetos::-webkit-scrollbar {
+        display: none; /* Chrome, Safari e Edge */
+    }
+}
 .footer-contatos {
     height: 100px;
     background-color: #151C27;
