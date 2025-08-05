@@ -230,7 +230,7 @@ const elCategoria = (cat) => {
   // Botao de voltar
   const btnVoltar = document.createElement('button')
   btnVoltar.className = 'btn-voltar'
-  btnVoltar.textContent = '⮜'
+  btnVoltar.textContent = '←'
   
   btnVoltar?.addEventListener('click', () => {
     const scrollAmount = carrossel.offsetWidth;
@@ -240,7 +240,7 @@ const elCategoria = (cat) => {
   // Botao de prosseguir
   const btnProsseguir = document.createElement('button')
   btnProsseguir.className = 'btn-prosseguir'
-  btnProsseguir.textContent = '⮞'
+  btnProsseguir.textContent = '→'
 
   btnProsseguir?.addEventListener('click', () => {
     const scrollAmount = carrossel.offsetWidth;

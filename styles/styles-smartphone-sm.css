@@ -94,7 +94,7 @@
                 border-radius: 9px;
                 height: 100%;
 
-                width: 150px;
+                width: 130px;
                 height: 50px;
                 padding-left: 8px;
                 padding-right: 8px;
@@ -105,7 +105,7 @@
 
                 align-items: center;
 
-                font-size: 20px;
+                font-size: 18px;
 
                 i {
                     color: #FFF;
@@ -214,7 +214,7 @@
 
     .polygon-card {
         width: 80%;
-        height: 380px;
+        height: auto;
 
         background: rgba(0, 32, 54, 0.2);
         border-radius: 16px;
@@ -231,7 +231,7 @@
 
     .card {
         width: 80%;
-        height: 380px;
+        height: auto;
 
         display: flex;
         flex-direction: column;
@@ -261,7 +261,7 @@
         margin: 0;
         margin-top: 8px;
         padding: 0;
-        font-size: 21px;
+        font-size: 22px;
         color: #FFF;
     };
 
@@ -285,7 +285,7 @@
     .carrossel-projetos {
         transition: transform 0.3s ease;
         padding: 12px;
-        gap: 24px;
+        gap: 14px;
         background-color: #151C27;
         display: flex;
         flex-direction: row;
@@ -340,11 +340,11 @@
 
             .img-projeto {
                 background-color: #e1306c;
-                min-height: 180px;
-                max-height: 180px;
+                min-height: 162px;
+                max-height: 162px;
 
-                min-width: 320px;
-                max-width: 320px;
+                min-width: 288px;
+                max-width: 288px;
             };
 
             .img-projeto:hover {
@@ -383,7 +383,7 @@
 }
 
 .footer-contatos {
-    height: 120px;
+    height: 100px;
     background-color: #151C27;
     color: #fff;
 
@@ -403,7 +403,7 @@
             margin: 0;
             padding: 0;
 
-            font-size: 21px;
+            font-size: 18px;
             font-weight: 700
         };
 
@@ -411,7 +411,7 @@
             margin: 0;
             padding: 0;
 
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 600;
 
             color: #CBCBCB
@@ -428,7 +428,7 @@
 
             li {
                 list-style: none;
-                font-size: 28px;
+                font-size: 24px;
 
                 .btn-social {
                     &.instagram {
