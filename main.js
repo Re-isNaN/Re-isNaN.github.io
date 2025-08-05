@@ -43,6 +43,18 @@ const categorias = [{
       foto: `./assets/Projetos/js_expert/web_worker.png`,
       url: `https://github.com/Re-isNaN/SimpleChatBot?tab=readme-ov-file#-web-workers-por-que-usar-para-processamento-pesado`
     },
+    {
+      titulo: 'Design Pattern Factory',
+      descricao: ``,
+      foto: ``,
+      url: `https://github.com/Re-isNaN/SimpleChatBot?tab=readme-ov-file#%EF%B8%8F-arquitetura-padr%C3%A3o-de-projeto-factory`
+    },
+    {
+      titulo: 'Design Pattern Builder',
+      descricao: ``,
+      foto: ``,
+      url: `https://github.com/Re-isNaN/ValidationProxyJS?tab=readme-ov-file#%EF%B8%8F-arquitetura-padr%C3%A3o-de-projeto-builder`
+    },
   ]
 },
 {
@@ -108,7 +120,7 @@ const categorias = [{
     },
     {
       titulo: 'Qualificação de Leads',
-      descricao: `Essa parte do projeto de Comunicação entre PY e JS, foi desenvolvida em Python e pretende qualificar a um lead (possível cliente) para prospectar (fechar negócio), com base na evolução das interações com o mesmo. Utilizando Machine Learning analisa os status de 4 interações e gera a probabilidade de prospecto.`,
+      descricao: `Essa parte do projeto de Comunicação entre PY e JS, foi desenvolvida em Python e pretende qualificar a um lead (possível cliente) para prospectar (fechar negócio), utilizando Machine Learning.`,
       foto: `./assets/Projetos/ia/qualificacao_leads.png`,
       url: `https://github.com/Re-isNaN/CommunicationJS2Py?tab=readme-ov-file#-machine-learning-aprendizado-de-m%C3%A1quina`
     },
@@ -124,7 +136,7 @@ const categorias = [{
       url: `https://www.ssi.net.br/`
     },
     {
-      titulo: 'Sistema para gerenciamento de vendas de indústria',
+      titulo: 'Sistema gestão industrial de vendas',
       descricao: `Esse sistema foi desenvolvido para a empresa Speed System Informática para o gerenciamento de pedidos de vendas de indústrias, focado para o controle do setor de vendas — tanto para gestor como vendedor — com gerenciamento de clientes, CRM, pedidos e acompanhamento básico de linha de produção.`,
       foto: `./assets/Projetos/comerciais/sistema_industria.png`,
       url: `https://www.ssi.net.br/`
@@ -172,18 +184,28 @@ const elProjeto = (pro) => {
     elContainerTextProjeto.className = 'text-projeto'
 
     // titulo do projeto
+    const elContainerTituloProjeto = document.createElement('div')
+    elContainerTituloProjeto.className = 'container-titulo'
+
     const elTituloProjeto = document.createElement('h3')
     elTituloProjeto.className = 'titulo'
     elTituloProjeto.textContent = pro.titulo
 
+    elContainerTituloProjeto.append(elTituloProjeto)
+
     // descricao do projeto
+    const elContainerDescricaoProjeto = document.createElement('div')
+    elContainerDescricaoProjeto.className = 'container-descricao'
+
     const elTextoProjeto = document.createElement('p')
     elTextoProjeto.className = 'texto'
     elTextoProjeto.textContent = pro.descricao
 
+    elContainerDescricaoProjeto.appendChild(elTextoProjeto)
+
     // Acrescenta os titulo e a descricao no container de texto
-    elContainerTextProjeto.appendChild(elTituloProjeto)
-    elContainerTextProjeto.appendChild(elTextoProjeto)
+    elContainerTextProjeto.appendChild(elContainerTituloProjeto)
+    elContainerTextProjeto.appendChild(elContainerDescricaoProjeto)
 
     // Acrescenta a imagem e o container texto dentro do container do projeto
     elContainerProjeto.appendChild(elImgProjeto)
