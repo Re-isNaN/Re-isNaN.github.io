@@ -374,7 +374,7 @@
                 };
 
                 .container-descricao {
-                    height: 80%;
+                    display: none;
 
                     p {
                         display: none;

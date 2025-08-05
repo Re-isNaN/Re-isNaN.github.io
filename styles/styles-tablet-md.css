@@ -372,6 +372,7 @@
                 };
 
                 .container-descricao {
+                    display: none;
                     p {
                         display: none;
                     };
