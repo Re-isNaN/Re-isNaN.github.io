@@ -383,6 +383,8 @@
 }
 
 .footer-contatos {
+    max-width: 100%;
+    overflow-x: scroll;
     height: 100px;
     background-color: #151C27;
     color: #fff;
