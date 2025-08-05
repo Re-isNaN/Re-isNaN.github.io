@@ -247,11 +247,9 @@ const elCategoria = (cat) => {
     smoothScrollTo(carrossel, carrossel.scrollLeft + scrollAmount);
   });
 
-  if(cat.projetos.length > 2){
-    // Acrescenta os botoes de voltar e prosseguir ao container do carrossel
-    carrossel.appendChild(btnVoltar)
-    carrossel.appendChild(btnProsseguir)
-  }
+  // Acrescenta os botoes de voltar e prosseguir ao container do carrossel
+  carrossel.appendChild(btnVoltar)
+  carrossel.appendChild(btnProsseguir)
 
   // Acrescenta o titulo e o container do carrossel
   sectionPrincipal.appendChild(titulo)
