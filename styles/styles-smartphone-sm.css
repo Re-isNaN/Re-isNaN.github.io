@@ -438,12 +438,10 @@
                     };
 
                     &.github {
-                        display: none;
                         color: #6e40c9;
                     };
 
                     &.linkedin {
-                        display: none;
                         color: #0a66c2;
                     };
 
