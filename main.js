@@ -45,14 +45,14 @@ const categorias = [{
     },
     {
       titulo: 'Design Pattern Factory',
-      descricao: ``,
-      foto: ``,
+      descricao: `Design patterns são essenciais para estruturar o código e, em alguns casos, melhorar a performance. O Factory Method é ideal para facilitar testes e abstrair lógicas complexas.`,
+      foto: `./assets/Projetos/js_expert/design_pattern_factory.png`,
       url: `https://github.com/Re-isNaN/SimpleChatBot?tab=readme-ov-file#%EF%B8%8F-arquitetura-padr%C3%A3o-de-projeto-factory`
     },
     {
       titulo: 'Design Pattern Builder',
-      descricao: ``,
-      foto: ``,
+      descricao: `O design pattern Builder é amplamente utilizado em bibliotecas como Knex e Zod, facilitando a criação de objetos complexos com métodos encadeados e organizados em blocos lógicos.`,
+      foto: `./assets/Projetos/js_expert/design_pattern_builder.png`,
       url: `https://github.com/Re-isNaN/ValidationProxyJS?tab=readme-ov-file#%EF%B8%8F-arquitetura-padr%C3%A3o-de-projeto-builder`
     },
   ]
@@ -230,7 +230,11 @@ const elCategoria = (cat) => {
   // Botao de voltar
   const btnVoltar = document.createElement('button')
   btnVoltar.className = 'btn-voltar'
-  btnVoltar.textContent = '←'
+
+  const iconVoltar = document.createElement('i');
+  iconVoltar.className = "fa-solid fa-angle-left fa-xs"; // Ícone Font Awesome
+  iconVoltar.style = "color: #ffffff;";
+  btnVoltar.appendChild(iconVoltar);
   
   btnVoltar?.addEventListener('click', () => {
     const scrollAmount = carrossel.offsetWidth;
@@ -240,7 +244,11 @@ const elCategoria = (cat) => {
   // Botao de prosseguir
   const btnProsseguir = document.createElement('button')
   btnProsseguir.className = 'btn-prosseguir'
-  btnProsseguir.textContent = '→'
+
+  const iconProsseguir = document.createElement('i');
+  iconProsseguir.className = "fa-solid fa-angle-right fa-xs"; // Ícone Font Awesome
+  iconProsseguir.style = "color: #ffffff;";
+  btnProsseguir.appendChild(iconProsseguir);
 
   btnProsseguir?.addEventListener('click', () => {
     const scrollAmount = carrossel.offsetWidth;

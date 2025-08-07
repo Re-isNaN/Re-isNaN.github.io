@@ -242,6 +242,10 @@
 
         p {
             font-size: 20px;
+        };
+
+        .optional-small-size {
+            display: none
         }
     };
 }

@@ -183,7 +183,7 @@
     };
 
     p {
-        margin: 6px;
+        margin: 16px;
         padding: 0;
         font-size: 18px;
         text-align: center;
@@ -214,7 +214,7 @@
     };
 
     .polygon-card {
-        width: 80%;
+        width: 70%;
         height: auto;
 
         background: rgba(0, 32, 54, 0.2);
@@ -243,6 +243,10 @@
         p {
             text-align: center;
             font-size: 18px;
+        };
+
+        .optional-small-size {
+            display: none
         }
     };
 }
