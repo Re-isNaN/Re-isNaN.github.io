@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
 
+    <!-- FAZER MOBILE -->
+
     <link rel="stylesheet" href="./styles/styles-smartphone-sm.css" media="only screen and (min-width: 0px) and (max-width: 319px)">
     <link rel="stylesheet" href="./styles/styles-smartphone-sm.css" media="only screen and (min-width: 320px) and (max-width: 480px)">
     <link rel="stylesheet" href="./styles/styles-smartphone-md.css" media="only screen and (min-width: 481px) and (max-width: 600px)">
@@ -13,7 +15,7 @@
 
     <link rel="stylesheet" href="./styles/styles-laptop.css" media="only screen and (min-width: 1024px) and (max-width: 1279px)">
     <link rel="stylesheet" href="./styles/styles-desktop-sm.css" media="only screen and (min-width: 1280px) and (max-width: 1535px)">
-    <link rel="stylesheet" href="./styles/styles-destop-md.css" media="only screen and (min-width: 1536px) and (max-width: 1919px)">
+    <link rel="stylesheet" href="./styles/styles-desktop-md.css" media="only screen and (min-width: 1536px) and (max-width: 1919px)">
     <link rel="stylesheet" href="./styles/styles-desktop-lg.css" media="only screen and (min-width: 1920px)">
     
     <link
@@ -27,135 +29,196 @@
 </head>
 <body class="root">
     <header class="nav-header">
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contatos">Contatos</a>
+        <h3>isNaN(`Re`)</h3>
+
+        <div class="nav-titles">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contatos">Contatos</a>
+        </div>
     </header>
 
-    <section id="home" class="section primary-background">
+    <section id="home" class="standard-background">
         <main class="container-home">
             <div class="descricao">
-                <h1>Renan Cabral</h1>
-                <h2>Desenvolvedor Full Stack especializado em JavaScript/TypeScript, com foco em soluções robustas usando Node.js, React e SQL Server.</h2>
+                <h4>Web Developer</h4>
+                <div>
+                    <h1 class="apresentacao">Olá, sou o</h1>
+                    <h1 class="nome">Renan Cabral</h1>
+                </div>
+                <h2>Desenvolvedor Full Stack especializado em <b>JavaScript/TypeScript</b>, com foco em soluções robustas usando <b>Node.js</b>, <b>React</b> e <b>SQL Server</b>.</h2>
 
 
                 
                 <div class="container-btn">
-                    <a href="https://github.com/Re-isNaN" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <div>Ver GitHub</div>
-                    </a>
+                    <div class="border-btn">
+                        <a href="https://github.com/Re-isNaN" target="_blank">
+                            <div>GitHub</div>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
 
-                    <a href="https://www.linkedin.com/in/renan-cabral-8a24092a4/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <div>Ver LinkedIn</div>
-                    </a>
+                    <div class="border-btn">
+                        <a href="https://www.linkedin.com/in/renan-cabral-8a24092a4/" target="_blank">
+                            <div>LinkedIn</div>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-experiencia">
+                    <img width="50px" height="50px" src="./assets/icons/container-experiencia/carbon_cics-program.png" alt="icone">
+
+                    <div class="separation-border"></div>
+                    
+                    <p>3+ anos de experiência <br> em desenvolvimento web</p>
                 </div>
             </div>
 
             <div class="foto-polygon">
-                <img src="./assets/foto_perfil.jfif" alt="Imagem dentro do hexágono" />
+                <!-- <img src="./assets/foto_perfil.jfif" alt="Imagem dentro do hexágono" /> -->
             </div>
         </main>
     </section>
 
-    <section id="sobre" class="secondary-background">
+    <section id="sobre" class="standard-background">
         <main class="container-sobre">
-            <h1>Sobre</h1>
-            <p>
-                Sou desenvolvedor Full Stack especializado em JavaScript e TypeScript, com foco em aplicações web 
-                para gestão comercial e industrial. Trabalho com Node.js no backend, React no frontend e SQL Server 
-                como principal banco de dados. Tenho formação em desenvolvimento de APIs (JS Expert) e experiência 
-                com Python em projetos de IA. Atualmente, busco evoluir em áreas como Inteligência Artificial, Machine Learning, 
-                criação de dashboards interativos em React e otimização de performance no backend com Node.
-            </p>
+            <div class="descricao">
+                <h1>Sobre meu trabalho</h1>
+                <h2>Renan Cabral <span>| Desenvolvedor</span></h2>
+                
+                <p>
+                    Sou desenvolvedor Full Stack especializado em JavaScript e TypeScript, com foco em aplicações web 
+                    para gestão comercial e industrial. 
+                    <br>
+                    <br>
+                    Trabalho com Node.js no backend, React no frontend e SQL Server 
+                    como principal banco de dados. 
+                    <br>
+                    <br>
+                    Tenho formação em desenvolvimento de APIs (JS Expert) e experiência 
+                    com Python em projetos de IA. 
+                    <br>
+                    <br>
+                    Atualmente, busco evoluir em áreas como Inteligência Artificial, Machine Learning, 
+                    criação de dashboards interativos em React e otimização de performance no backend com Node.
+                </p>
+
+                <div class="container-experiencia">
+                    <img src="./assets/icons/container-experiencia/carbon_cics-program.png" alt="icone">
+
+                    <div class="separation-border"></div>
+                    
+                    <p>3+ anos de experiência <br> em desenvolvimento web</p>
+                </div>
+            </div>
 
             <div class="container-cards">
-                <div class="background-card">
-                    <div class="polygon-card">
-                        <div class="card backend">
-                            <h1>Backend</h1>
-                            <p>
-                                Atuo na integração entre o client-side e o banco de dados por meio de APIs bem estruturadas. Dou
-                                ênfase à performance das aplicações, explorando recursos como programação assíncrona, execução
-                                paralela e processamento sob demanda no Node.js.
-                                <span class="optional-small-size">
-                                    Adoto TDD para garantir confiabilidade, seguindo princípios de Clean Code e mantendo uma 
-                                    arquitetura organizada e coerente.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                    </div>
+                <div class="card backend">
+                    <h1>Backend</h1>
+                    <p>
+                        Atuo na integração entre o client-side e o banco de dados por meio de APIs bem estruturadas. Dou
+                        ênfase à performance das aplicações, explorando recursos como programação assíncrona, execução
+                        paralela e processamento sob demanda no Node.js.
+                        <span class="optional-small-size">
+                            Adoto TDD para garantir confiabilidade, seguindo princípios de Clean Code e mantendo uma 
+                            arquitetura organizada e coerente.
+                        </span>
+                    </p>
 
-                <div class="background-card">
-                    <div class="polygon-card">
-                        <div class="card frontend">
-                            <h1>Frontend</h1>
-                            <p>
-                                Desenvolvo interfaces modernas e profissionais, com atenção à responsividade, performance e interatividade.
-                                Utilizo componentes reutilizáveis e estilizações consistentes, sempre alinhadas às boas práticas de UI/UX.
-                                <span class="optional-small-size">
-                                    A estrutura do projeto é bem definida, com organização clara de pastas, o que facilita a manutenção e garante
-                                    escalabilidade, mantendo a estética e a usabilidade como prioridades.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                    </div>
+                    <img class="icon" src="./assets/sobre/material-symbols_api.png" alt="icone">
+                </div>
 
-                <div class="background-card">
-                    <div class="polygon-card">
-                        <div class="card ia">
-                            <h1>IA</h1>
-                            <p>
-                                Atuo com Inteligência Artificial, focando em Machine Learning e integração com modelos de mercado. Tenho experiência
-                                com JavaScript, Python, NLP, embeddings, previsão estatística e análise de imagem em tempo real. 
-                                <span class="optional-small-size">
-                                    Utilizo essas tecnologias para enriquecer APIs, melhorar previsões e criar experiências mais inteligentes e personalizadas.
-                                </span>
-                            </p>
-                        </div>
-                        </div>
+                <div class="card frontend">
+                    <h1>Frontend</h1>
+                    <p>
+                        Desenvolvo interfaces modernas e profissionais, com atenção à responsividade, performance e interatividade.
+                        Utilizo componentes reutilizáveis e estilizações consistentes, sempre alinhadas às boas práticas de UI/UX.
+                        <span class="optional-small-size">
+                            A estrutura do projeto é bem definida, com organização clara de pastas, o que facilita a manutenção e garante
+                            escalabilidade, mantendo a estética e a usabilidade como prioridades.
+                        </span>
+                    </p>
+
+                    <img class="icon" src="./assets/sobre/flowbite_html-solid.png" alt="icone">
+                </div>
+
+                
+                <div class="card ia">
+                    <h1>IA</h1>
+                    <p>
+                        Atuo com Inteligência Artificial, focando em Machine Learning e integração com modelos de mercado. Tenho experiência
+                        com JavaScript, Python, NLP, embeddings, previsão estatística e análise de imagem em tempo real. 
+                        <span class="optional-small-size">
+                            Utilizo essas tecnologias para enriquecer APIs, melhorar previsões e criar experiências mais inteligentes e personalizadas.
+                        </span>
+                    </p>
+
+                    <img class="icon" src="./assets/sobre/healthicons_artificial-intelligence.png" alt="icone">
+                </div>
+                        
+            </div>
+        </main>
+    </section>
+
+    <section id="transicao" class="section-transicao">
+        <img class="icon" width="50px" height="50px" src="./assets/transicao/seta.png" alt="icone">
+    </section>
+
+    <section id="projetos" class="standard-background">
+        <main id="container-projetos" class="container-projetos">
+            <div class="descricao">
+                <div class="titles">
+                    <h1>Meus projetos</h1>
+                    <h2>Renan Cabral <span>| Desenvolvedor</span></h2>
+                </div>
+
+                <div class="container-experiencia">
+                    <img width="50px" height="50px" src="./assets/icons/container-experiencia/carbon_cics-program.png" alt="icone">
+
+                    <div class="separation-border"></div>
+                    
+                    <p>3+ anos de experiência <br> em desenvolvimento web</p>
                 </div>
             </div>
         </main>
     </section>
 
-    <section id="projetos" class="primary-background">
-        <main id="container-projetos" class="container-projetos">
-            <h1>Projetos</h1>
-        </main>
-    </section>
-
     <section id="contatos" class="footer-contatos">
-        <div class="titulo">
-            <h1>Renan Cabral</h1>
-            <h2>renangusoncabral@gmail.com</h2>
+        <div class="container-footer">
+            <div class="titles">
+                <h1>isNaN(`Re`) |</h1>
+                <h2>renangusoncabral@gmail.com</h2>
+            </div>
+
+            <nav class="contatos">
+                <ul class="items-contatos">
+                    <li>
+                        <a href="https://www.instagram.com/re.isnan/" target="_blank" class="btn-social instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/Re-isNaN" target="_blank" class="btn-social github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/renan-cabral-8a24092a4/" target="_blank" class="btn-social linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="https://www.instagram.com/bylucasdsn/" target="_blank" class="designer">
+                <div class="primeiro-texto">Criado por</div> 
+                bylucasdsn
+            </a>
         </div>
-
-        <nav class="contatos">
-            <ul class="items-contatos">
-                <li>
-                    <a href="https://www.instagram.com/re.isnan/" target="_blank" class="btn-social instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/Re-isNaN" target="_blank" class="btn-social github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/renan-cabral-8a24092a4/" target="_blank" class="btn-social linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </section>
 <script src="./main.js"></script>
 </body>
