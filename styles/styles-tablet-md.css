@@ -30,7 +30,8 @@
 
 .nav-header {
     width: var(--nav-bar-size);
-    height: 48px;
+    height: 64px;
+    box-sizing: border-box;
 
     background: rgba(15, 43, 86, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -49,10 +50,17 @@
 
     align-items: center;
     justify-content: space-between;
+        
+    .nav-titles {
+        margin-right: 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px
+    };
 
     h3 {
         margin-left: 8px;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 700;
 
         background-image: linear-gradient(to right, #BAFF56, #6F9933);
@@ -68,15 +76,8 @@
         color: #BAFF56;
     };
         
-    .nav-titles {
-        margin-right: 8px;
-        display: flex;
-        flex-direction: row;
-        gap: 8px
-    };
-        
     a {
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 400;
         text-decoration: none;
         color: #fff;
@@ -92,7 +93,7 @@
     height: 100%;
     background-color: #050418;
 
-    padding-top: 48px;
+    padding-top: 64px;
 
     display: grid;
     place-items: center;
@@ -101,7 +102,12 @@
 .container-home {
     width: 100%;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     .descricao {
+        width: 360px;
         padding: 12px;
         display: flex;
         flex-direction: column;
@@ -150,16 +156,16 @@
 
             display: flex;
             flex-direction: row;
-            gap: 12px;
+            gap: 24px;
             align-items: center;
 
             .border-btn {
                 border-radius: 2px;
 
-                width: 120px;
-                height: 45px;
+                width: 150px;
+                height: 60px;
                 border: solid 1px #FFF;
-                padding: 2px;
+                padding: auto;
 
                 display: grid;
                 place-items: center
@@ -174,8 +180,8 @@
 
                 height: 100%;
 
-                width: 116px;
-                height: 41px;
+                width: 142px;
+                height: 52px;
 
                 display: flex;
                 flex-direction: row;
@@ -238,11 +244,16 @@
     };
 
     .foto-polygon {
-        display: none;
+        width: calc(100% - 360px);
     }
 
     .foto-polygon img {
-        display: none;
+        width: 100%;
+        height: 100%;
+        -webkit-mask-image: linear-gradient(to right, transparent 10%, black 100%);
+        object-fit: cover;
+        clip-path: inherit;
+        border-radius: inherit;
     }
 }
 
@@ -250,11 +261,13 @@
     width: var(--nav-bar-size);
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 
-    margin-top: 20px;
+    margin-top: 10px;
     
     .descricao {
+        width: 100%;
         padding: 12px;
         display: flex;
         flex-direction: column;
@@ -322,10 +335,11 @@
     }
 
     .container-cards {
-        padding: 10px;
-        width: 300px;
+        padding: 12px;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     };
 
@@ -341,7 +355,7 @@
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
 
-        width: 300px;
+        width: 420px;
 
         display: flex;
         flex-direction: column;
@@ -360,12 +374,12 @@
             margin: 0;
             color: #FFF;
 
-            width: 260px;
+            width: 380px;
 
             margin-bottom: 20px;
             margin-left: 15px;
 
-            text-align: left;
+            text-align: justify;
             font-size: 15px;
         };
 
@@ -396,6 +410,9 @@
 }
 
 .container-projetos {
+    --width-projeto: 320px;
+    --height-projeto: 180px;
+
     width: calc(100vw - 16px);
     height: auto;
     padding-top: 32px;
@@ -410,7 +427,6 @@
 
     .descricao {
         width: var(--nav-bar-size);
-        padding: 12px;
 
         display: flex;
         flex-direction: column;
@@ -494,7 +510,7 @@
 
     .carrossel-projetos {
         transition: transform 0.3s ease;
-        padding: 0px 24px;
+        padding: 0px 12px;
         gap: 30px;
         background-color: #0000;
         display: flex;
@@ -540,7 +556,7 @@
         };
 
         .projeto {
-            width: 320px;
+            width: var(--width-projeto);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -550,11 +566,11 @@
                 border: solid 1px #FFF;
                 border-image: linear-gradient(to bottom right, #FFFFFFB2, #99999900) 1;
 
-                min-height: 180px;
-                max-height: 180px;
+                min-height: var(--height-projeto);
+                max-height: var(--height-projeto);
 
-                min-width: 320px;
-                max-width: 320px;
+                min-width: var(--width-projeto);
+                max-width: var(--width-projeto);
             };
 
             .img-projeto:hover {
@@ -563,13 +579,13 @@
             };
 
             .text-projeto {
-                width: 100%;
+                width: var(--width-projeto);
                 color: #fff;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
 
                 .container-titulo {
-                    width: 100%;
+                    width: var(--width-projeto);
 
                     h3 {
                         font-size: 15px;
@@ -635,7 +651,7 @@
             h1 {
                 margin: 0;
                 padding: 0;
-                font-size: 16px;
+                font-size: 21px;
                 font-weight: 700;
 
                 background-image: linear-gradient(to right, #BAFF56, #6F9933);
@@ -652,7 +668,10 @@
             };
 
             h2 {
-                display: none;
+                margin: 0px 8px;
+                padding: 0;
+                font-size: 17px;
+                font-weight: 400;
             };
         };
 
@@ -661,11 +680,11 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: end;
-                gap: 8px;
+                gap: 12px;
 
                 li {
                     list-style: none;
-                    font-size: 20px;
+                    font-size: 27px;
 
                     .btn-social {
                         color: #BAFF56EE;
@@ -676,7 +695,7 @@
 
                         :active{
                             color: #D9D9D9;
-                            font-size: 18px
+                            font-size: 24px
                         }
                     }
                 }
@@ -684,14 +703,14 @@
         };
 
         .designer {
-            font-size: 13px;
+            font-size: 15px;
             position: absolute;
 
             display: flex;
             flex-direction: row;
             gap: 4px;
 
-            right: 90px;
+            right: 120px;
             bottom: 2px;
 
             text-decoration: none;

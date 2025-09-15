@@ -164,8 +164,9 @@
 
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
+
+            gap: 50px;
 
             .border-btn {
                 border-radius: 2px;
@@ -252,22 +253,15 @@
     };
 
     .foto-polygon {
-        margin-top: -90px;
-        margin-right: 100px;
+        margin-top: -75px;
 
         max-width: 490px;
         width: 100%;
         
         height: 490px;
-        /* background: #52D1DC;
-        padding: 8px;
-        clip-path: polygon(
-            25% 0%, 75% 0%,
-            100% 50%,
-            75% 100%, 25% 100%,
-            0% 50%
-        );
-            */
+        padding: 3px;
+        border-radius: 50%;
+           
         display: flex;
         align-items: center;
         justify-content: center;

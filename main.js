@@ -60,7 +60,7 @@ const categorias = [{
 },
 {
   categoria: 'Node',
-  icone: './assets/Projetos/icons_categorias/icon_js.png',
+  icone: './assets/Projetos/icons_categorias/icon_node.png',
   projetos: [
     {
       titulo: 'Performance TSP',
@@ -114,7 +114,7 @@ const categorias = [{
 },
 {
   categoria: 'Inteligência Artificial',
-  icone: './assets/Projetos/icons_categorias/icon_js.png',
+  icone: './assets/Projetos/icons_categorias/icon_ia.png',
   projetos: [
     {
       titulo: 'Simple Chatbot',
@@ -282,10 +282,6 @@ const elCategoria = (cat) => {
     smoothScrollTo(carrossel, carrossel.scrollLeft + scrollAmount);
   });
 
-  // Acrescenta os botoes de voltar e prosseguir ao container do carrossel
-  carrossel.appendChild(btnVoltar)
-  carrossel.appendChild(btnProsseguir)
-
   // Acrescenta o titulo e o container do carrossel
   sectionPrincipal.appendChild(headerCategoria)
   sectionPrincipal.appendChild(carrossel)
@@ -293,6 +289,10 @@ const elCategoria = (cat) => {
   for(const pro of cat.projetos){
     carrossel.appendChild(elProjeto(pro))
   }
+
+  // Acrescenta os botoes de voltar e prosseguir ao container do carrossel
+  carrossel.appendChild(btnVoltar)
+  carrossel.appendChild(btnProsseguir)
 
   return sectionPrincipal
 }
